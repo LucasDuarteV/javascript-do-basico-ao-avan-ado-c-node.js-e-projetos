@@ -1,19 +1,9 @@
-function soma(a , b){
-    if(a === undefined || b === undefined){
-        return "Essa função precisa ter os dois argumentos!"
-    } else{
-        return a + b
-    }
+function potencia(base , exp = 2){
+    return Math.pow(base,exp)
 }
 
-console.log(soma(1 , 5))
+console.log(potencia(2))
 
-function saudacao(nome , idade){
-    if(idade === undefined){
-        return "Olá " + nome
-    } else{
-        return "Olá " + nome + " você tem " + idade + " anos"
-    }
-}
+console.log(potencia(2,2))
 
-console.log(saudacao("lucas"))
+console.log(potencia(2,3))
