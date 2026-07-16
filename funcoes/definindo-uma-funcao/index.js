@@ -1,18 +1,9 @@
-function multiplicarNumeros(x,y,z){
-    return x * y * z
+let y = 10
+
+function imprimir(){
+    let y = 150
+    console.log(y)
 }
 
-console.log(multiplicarNumeros(5 , 1 , 1))
-
-const mult = multiplicarNumeros(2 , 2 , 2)
-console.log(mult)
-
-function podeDirigir(idade , cnh){
-    if(idade >= 18 && cnh == true){
-        return 'Pode dirigir!'
-    } else{
-        return 'Não pode dirigir!'
-    }
-}
-
-console.log(podeDirigir(20 , true))
+imprimir()
+console.log(y)
