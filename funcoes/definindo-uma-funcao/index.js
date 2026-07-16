@@ -1,11 +1,19 @@
-let consoleTeste = () =>{
-    console.log('Olá, Mundo!')
+function soma(a , b){
+    if(a === undefined || b === undefined){
+        return "Essa função precisa ter os dois argumentos!"
+    } else{
+        return a + b
+    }
 }
 
-consoleTeste()
+console.log(soma(1 , 5))
 
-let soma = (a , b) =>{
-    return a + b
+function saudacao(nome , idade){
+    if(idade === undefined){
+        return "Olá " + nome
+    } else{
+        return "Olá " + nome + " você tem " + idade + " anos"
+    }
 }
 
-console.log(soma(5,5))
+console.log(saudacao("lucas"))
