@@ -1,9 +1,11 @@
-let y = 10
-
-function imprimir(){
-    let y = 150
-    console.log(y)
+let consoleTeste = () =>{
+    console.log('Olá, Mundo!')
 }
 
-imprimir()
-console.log(y)
+consoleTeste()
+
+let soma = (a , b) =>{
+    return a + b
+}
+
+console.log(soma(5,5))
