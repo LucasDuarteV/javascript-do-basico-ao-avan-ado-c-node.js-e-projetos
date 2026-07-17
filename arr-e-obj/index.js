@@ -1,15 +1,14 @@
-let pessoa = {
-    nome: 'Lucas',
-    idade: 22,
-    profissao: 'Desenvolvedor'
+let carro = {
+    portas: 2,
+    portamalas: '200l',
+    motor: '2.0'
 }
 
-console.log(pessoa.nome)
+let adicionado = {
+    tetoSolar: true,
+    arCondicionado: true,
+}
 
-delete pessoa.nome
+Object.assign(carro,adicionado)
 
-console.log(pessoa)
-
-pessoa.casado = false
-
-console.log(pessoa.casado)
+console.log(carro)
