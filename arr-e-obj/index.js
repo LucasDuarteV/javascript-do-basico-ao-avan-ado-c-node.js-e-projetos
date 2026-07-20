@@ -1,6 +1,6 @@
 let pessoa = 
 {
-    "nome": 'Lucas',
+    "nome": "Lucas",
     "idade": 22
 }
 
