@@ -1,3 +1,6 @@
-let carros = ['Fiat' , 'Chevrolet' , 'Mercedes' , 'Furd' , 'Volkkswagem']
+let nome = '            Lucas'
 
-console.log(carros.reverse())
+let nomeCorrigido = nome.trim()
+
+console.log(nome)
+console.log(nomeCorrigido)
