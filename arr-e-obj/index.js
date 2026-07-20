@@ -1,5 +1,3 @@
-let nomes = ["Matheus" , 'Maria' , 'Lucas' , 'Jose' , 'Pedro' , 'Joao']
+let carros = ['Fiat' , 'Chevrolet' , 'Mercedes' , 'Furd' , 'Volkkswagem']
 
-nomes.forEach(nome => 
-    console.log("O nome é " + nome)
-)
+console.log(carros.includes('Fiat'))
