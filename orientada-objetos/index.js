@@ -1,18 +1,11 @@
-const cachorro = {
-    raca: 'SRD',
-    uivar: function(){
-        console.log('Auuuuuuuuuuu!')
-    },
-    rosnar: function(){
-        console.log('Grrrrrrrrrrrrrr!')
-    },
-    setRaca(raca){
-        this.raca = raca
-    },
-    getRaca(){
-        return console.log('A raça do meu cachorro é: ' + this.raca)
-    }
+const pessoa= {
+    maos: 2
 }
 
-cachorro.setRaca('Pastor alemão')
-cachorro.getRaca()
+const pessoaNova = Object.create(pessoa)
+
+console.log(pessoaNova.maos)
+
+console.log(pessoaNova.hasOwnProperty('maos'))
+
+console.log(Object.getPrototypeOf(pessoaNova) === pessoa)
