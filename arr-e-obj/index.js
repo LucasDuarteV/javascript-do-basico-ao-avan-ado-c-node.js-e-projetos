@@ -1,6 +1,3 @@
-let nome = '            Lucas'
+let frase = 'Testando metodo split'
 
-let nomeCorrigido = nome.trim()
-
-console.log(nome)
-console.log(nomeCorrigido)
+console.log(frase.split(' '))
