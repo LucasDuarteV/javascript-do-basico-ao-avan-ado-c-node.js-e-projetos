@@ -1,10 +1,12 @@
-function criarCachorro(raca,patas,cor){
-    let cachorro = Object.create({})
-    cachorro.raca= raca,
-    cachorro.patas = patas,
-    cachorro.cor = cor
-    return cachorro
+function Cachorro(raca,patas,cor){
+    this.raca = raca,
+    this.patas = patas,
+    this.cor = cor
+    this.uivar = function(){
+        console.log('Auuuu Auuuuuu')
+    }
 }
 
-let doberman = criarCachorro('Dorberman',4,'Branco')
-console.log(doberman)
+let husky = new Cachorro('Husky', 4 , 'Cinza-claro e branco')
+husky.uivar()
+console.log(husky)
