@@ -1,16 +1,13 @@
-let num = 1
-let num1 = 5
-let num2 = 3
-let num3 = 4
-
-function imprimirNumeros(...args){
-    for (let i = 0; i < args.length; i++){
-        console.log(args[i])
-    }
+let obj = {
+    rodas: 4,
+    portas: 4,
+    tetoSolar: true,
+    motor: '2.0'
 }
 
-imprimirNumeros(num,num1,num2)
-console.log('Pausa')
-imprimirNumeros(num2,num3)
+const {rodas: vRodas , portas: vPortas, tetoSolar: vTetoSolar , motor:vMotor} = obj
 
-imprimirNumeros(2,6,7,8,9)
+console.log(vRodas)
+console.log(vPortas)
+console.log(vTetoSolar)
+console.log(vMotor)
