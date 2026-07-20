@@ -1,12 +1,19 @@
 function Cachorro(raca,patas,cor){
-    this.raca = raca,
-    this.patas = patas,
+    this.raca = raca
+    this.patas = patas
     this.cor = cor
-    this.uivar = function(){
-        console.log('Auuuu Auuuuuu')
-    }
 }
 
-let husky = new Cachorro('Husky', 4 , 'Cinza-claro e branco')
-husky.uivar()
+Cachorro.prototype.uivar = function(){
+    console.log("Auuuuuuuu")
+}
+
+Cachorro.prototype.latir = function(){
+    console.log("Au au")
+}
+
+let husky = new Cachorro('Husky',4,'cinza')
+
 console.log(husky)
+husky.uivar()
+husky.latir()
