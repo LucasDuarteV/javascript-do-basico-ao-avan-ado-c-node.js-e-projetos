@@ -1,11 +1,15 @@
-const pessoa= {
-    maos: 2
+let cachorro = {
+    patas: 4,
+    raca: "SRD",
+    latir: function(){
+        console.log('Au au')
+    }
 }
 
-const pessoaNova = Object.create(pessoa)
+let labrador = Object.create(cachorro)
 
-console.log(pessoaNova.maos)
+labrador.latir()
 
-console.log(pessoaNova.hasOwnProperty('maos'))
+labrador.raca = 'Labradror'
 
-console.log(Object.getPrototypeOf(pessoaNova) === pessoa)
+console.log(labrador)
