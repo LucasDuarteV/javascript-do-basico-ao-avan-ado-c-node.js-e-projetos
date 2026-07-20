@@ -1,14 +1,5 @@
-let carro = {
-    portas: 2,
-    portamalas: '200l',
-    motor: '2.0'
-}
+let nomes = ["Matheus" , 'Maria' , 'Lucas' , 'Jose' , 'Pedro' , 'Joao']
 
-let adicionado = {
-    tetoSolar: true,
-    arCondicionado: true,
-}
-
-Object.assign(carro,adicionado)
-
-console.log(carro)
+nomes.forEach(nome => 
+    console.log("O nome é " + nome)
+)
