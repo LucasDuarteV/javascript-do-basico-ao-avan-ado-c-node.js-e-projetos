@@ -1,3 +1,3 @@
 let carros = ['Fiat' , 'Chevrolet' , 'Mercedes' , 'Furd' , 'Volkkswagem']
 
-console.log(carros.includes('Fiat'))
+console.log(carros.reverse())
