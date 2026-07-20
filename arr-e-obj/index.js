@@ -1,3 +1,7 @@
 let frase = 'Testando metodo split'
 
-console.log(frase.split(' '))
+let palavas = frase.split(' ')
+
+let novaFrase = palavas.join('@')
+
+console.log(novaFrase)
