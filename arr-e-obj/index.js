@@ -1,13 +1,6 @@
-let obj = {
-    rodas: 4,
-    portas: 4,
-    tetoSolar: true,
-    motor: '2.0'
-}
+let numeros = [2,4,5,8]
 
-const {rodas: vRodas , portas: vPortas, tetoSolar: vTetoSolar , motor:vMotor} = obj
+let [num1, num2, num3, num4] = numeros
 
-console.log(vRodas)
-console.log(vPortas)
-console.log(vTetoSolar)
-console.log(vMotor)
+console.log(num1)
+console.log(num3)
