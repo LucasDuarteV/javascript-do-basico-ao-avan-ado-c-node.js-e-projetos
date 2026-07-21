@@ -22,3 +22,7 @@ class Cachorro extends Mamifero{
 let pug = new Cachorro(4,'Pug')
 
 console.log(pug)
+
+pug.latir()
+
+console.log(new Cachorro instanceof Mamifero)
