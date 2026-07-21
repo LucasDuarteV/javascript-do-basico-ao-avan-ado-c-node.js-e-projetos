@@ -7,13 +7,20 @@ class Cachorro{
     latir(){
         console.log('Au auuu')
     }
+
+    get getCor(){
+        return this.cor
+    }
+
+    set setCor(cor){
+        this.cor = cor
+    }
 }
 
-Cachorro.prototype.patas = 4
+let pastor = new Cachorro('Pastor alemão','Cor não definida')
 
-let labrador = new Cachorro('Labrador','Amarelo')
+console.log(pastor)
 
-console.log(labrador)
+pastor.setCor = 'Preto e Marron'
 
-console.log(labrador.patas)
-labrador.latir()
+console.log(pastor.getCor)
