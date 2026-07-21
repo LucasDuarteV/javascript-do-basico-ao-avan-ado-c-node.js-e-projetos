@@ -1,10 +1,19 @@
 class Cachorro{
-    constructor(raca,patas,cor){
+    constructor(raca,cor){
         this.raca = raca
-        this.patas = patas
         this.cor =  cor
+    }
+
+    latir(){
+        console.log('Au auuu')
     }
 }
 
-let labrador = new Cachorro('Labrador',4,'Amarelo')
+Cachorro.prototype.patas = 4
+
+let labrador = new Cachorro('Labrador','Amarelo')
+
 console.log(labrador)
+
+console.log(labrador.patas)
+labrador.latir()
