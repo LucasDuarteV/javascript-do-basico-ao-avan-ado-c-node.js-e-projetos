@@ -1,11 +1,11 @@
-function checarNumero(num){
-    let number = Number(num)
-    if(Number.isNaN(number)){
-        console.log("Por favor passe um número!")
-    } else{
-        return number
+function saudacao(nome){
+    if(typeof nome != 'string'){
+        throw new Error("O paramentro nome precisa ser string!")
     }
+
+    console.log(`Olá, ${nome}`)
 }
 
-checarNumero(5)
-checarNumero('Lu')
+saudacao('Lucas')
+saudacao(10)
+console.log("teste")
