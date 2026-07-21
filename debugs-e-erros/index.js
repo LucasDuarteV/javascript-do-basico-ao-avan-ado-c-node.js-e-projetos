@@ -1,11 +1,15 @@
-function saudacao(nome){
-    if(typeof nome != 'string'){
-        throw new Error("O paramentro nome precisa ser string!")
+let arr = [1,2,3,4,5]
+let arr1 = []
+
+function iteraArray(array){
+    if(array.length == 0){
+        throw new Error("Array precisa pelo menos ter um elemento")
     }
 
-    console.log(`Olá, ${nome}`)
+    for(let i = 0; i < array.length; i++){
+        console.log(array[i])
+    }
 }
 
-saudacao('Lucas')
-saudacao(10)
-console.log("teste")
+iteraArray(arr)
+iteraArray(arr1)
