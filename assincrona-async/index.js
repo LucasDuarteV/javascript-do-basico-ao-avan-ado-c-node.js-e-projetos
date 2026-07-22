@@ -1,6 +1,13 @@
-let promiseFalha = Promise.resolve(new Error('Não deu certo'))
+function verificaNumero(num){
+    return new Promise((resolve, reject) => {
+        if(num === 2){
+            resolve("O número é 2");
+        } else {
+            reject(new Error("Falha!"));
+        }
+    });
+}
 
-console.log('Siiiiiiiiiiu')
-
-promiseFalha.then(value => console.log(value))
-.catch(erro => console.log('FALHA!'))
+verificaNumero(2)
+    .then(mensagem => console.log(mensagem))
+    .catch(erro => console.log(erro.message));
