@@ -1,7 +1,5 @@
-console.log('1')
+let p = Promise.resolve(1 + 6)
 
-setTimeout(function(){
-    console.log('2')
-}, 2000)
+console.log(p)
 
-console.log('3')
+p.then((value) => {console.log(`O valor é ${value}`)})
