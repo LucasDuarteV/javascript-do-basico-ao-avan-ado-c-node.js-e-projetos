@@ -1,5 +1,6 @@
-let p = Promise.resolve(1 + 6)
+let promiseFalha = Promise.resolve(new Error('Não deu certo'))
 
-console.log(p)
+console.log('Siiiiiiiiiiu')
 
-p.then((value) => {console.log(`O valor é ${value}`)})
+promiseFalha.then(value => console.log(value))
+.catch(erro => console.log('FALHA!'))
