@@ -1,10 +1,5 @@
-const reg1 = new RegExp('bola')
+let frutas = /\d+ (bananas | maçãs | laranjas)/
 
-console.log(reg1.test('Tem bola?'))
-console.log(reg1.test('Não tem'))
-
-
-const reg2 = /gol/
-
-console.log(reg2.test('Tem gol'))
-console.log(reg2.test("Não tem"))
+console.log(frutas.test('10 bananas'))
+console.log(frutas.test('5 maçãs'))
+console.log(frutas.test('15 laranjas'))
