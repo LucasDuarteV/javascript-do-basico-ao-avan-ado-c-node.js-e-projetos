@@ -1,5 +1,3 @@
-let frutas = /\d+ (bananas | maçãs | laranjas)/
+let validarDataDeNascimento = /[0-9]{2}[/][0-9]{2}[/][0-9]{4}/
 
-console.log(frutas.test('10 bananas'))
-console.log(frutas.test('5 maçãs'))
-console.log(frutas.test('15 laranjas'))
+console.log(validarDataDeNascimento.test('06/12/2003'))
