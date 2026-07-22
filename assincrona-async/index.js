@@ -1,13 +1,16 @@
-function verificaNumero(num){
-    return new Promise((resolve, reject) => {
-        if(num === 2){
-            resolve("O número é 2");
-        } else {
-            reject(new Error("Falha!"));
-        }
-    });
+function somaComDelay(a,b){
+    return new Promise(resolve => {
+        setTimeout(function(){
+            resolve(a+b)
+        }, 4000)
+    })
 }
 
-verificaNumero(2)
-    .then(mensagem => console.log(mensagem))
-    .catch(erro => console.log(erro.message));
+async function resSoma(a,b,c) {
+    let x = somaComDelay(a,b)
+    let y = c
+    
+    return await x + y
+}
+
+resSoma(1,2,3).then(value => console.log(value))
