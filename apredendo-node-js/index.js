@@ -1,18 +1,11 @@
-const { createServer, request } = require('http')
+let express = require('express')
 
-let server = createServer((request , response) => {
-    response.writeHead(200, {
-        'Content-Type': 'text/html; charset=utf-8'
-    });
+let app = express()
 
-    response.write(`
-        <h1>Olá, Mundo!</h1>
-        <p>Primeira página com Node.js</p>
-    `);
-
-    response.end()
+app.get('/', (req,res) =>{
+    res.send('Primeira rota criada!')
 })
 
-server.listen(8000)
-
-console.log('Server criado com sucesso!')
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000!')
+})
