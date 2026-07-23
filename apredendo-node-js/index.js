@@ -1,19 +1,18 @@
-const fs = require('fs')
+const { createServer, request } = require('http')
 
-fs.readFile('arquivo.txt' , 'utf8' , (erro,texto) =>{
-    if(erro){
-        throw erro
-    } else{
-        console.log(texto)
-    }
+let server = createServer((request , response) => {
+    response.writeHead(200, {
+        'Content-Type': 'text/html; charset=utf-8'
+    });
+
+    response.write(`
+        <h1>Olá, Mundo!</h1>
+        <p>Primeira página com Node.js</p>
+    `);
+
+    response.end()
 })
 
-const { writeFile } = require('fs')
+server.listen(8000)
 
-writeFile('arquivo.txt' , 'Olá, Mundo!' , (erro => {
-    if(erro){
-        throw erro
-    } else{
-        console.log('Arquivo criado com sucesso!')
-    }
-}))
+console.log('Server criado com sucesso!')
